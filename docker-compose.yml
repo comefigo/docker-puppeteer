@@ -1,0 +1,11 @@
+version: "3.7"
+services: 
+  bot:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: reserv_bot
+    container_name: reserv_bot
+    volumes:
+      - ./src:/bot/src
+    command: node /bot/src/app.js
