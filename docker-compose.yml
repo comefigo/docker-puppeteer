@@ -1,11 +1,11 @@
 version: "3.7"
 services: 
-  bot:
+  puppeteer:
     build:
       context: ./
       dockerfile: Dockerfile
-    image: reserv_bot
-    container_name: reserv_bot
+    image: puppeteer
+    container_name: puppeteer
     volumes:
-      - ./src:/bot/src
-    command: node /bot/src/app.js
+      - ./src:/puppeteer/src
+    command: node /puppeteer/src/app.js

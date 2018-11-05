@@ -2,3 +2,6 @@
 
 ## startup command
 
+```
+> docker-compose.exe up --force-recreate
+```
